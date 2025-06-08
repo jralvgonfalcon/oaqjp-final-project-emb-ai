@@ -12,6 +12,7 @@ def emotion_detector(text_to_analyze):
     predicted_emotions = my_json.get('emotionPredictions', [])
     myfirstemotion = predicted_emotions[0]
 
+
     emotions = myfirstemotion.get('emotion', {})
 
     anger = emotions.get('anger', 0.0)
